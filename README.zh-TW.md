@@ -1,195 +1,195 @@
 <div align="center">
   <h1>MarkNote</h1>
   <p>
-    MarkNote is a modern, local-first, cross-platform Markdown editor for macOS, Windows, and Linux.
+    MarkNote 是一款現代化、以本機優先（local-first）為核心、支援 macOS、Windows 與 Linux 的跨平台 Markdown 編輯器。
   </p>
   <a href="./README.md">English</a> |
   <a href="./README.zh-TW.md">正體中文</a>
 </div>
 
-## Table of Contents
+## 目錄
 
-- [Table of Contents](#table-of-contents)
-- [1. Getting Started](#1-getting-started)
-  - [Install](#install)
-  - [Create or Open a Workspace](#create-or-open-a-workspace)
-- [2. Workspace \& UI Overview](#2-workspace--ui-overview)
-- [3. Editing Modes](#3-editing-modes)
-- [4. Everyday Markdown](#4-everyday-markdown)
-  - [Common Syntax (Examples)](#common-syntax-examples)
-  - [Callouts](#callouts)
-  - [Front Matter (YAML)](#front-matter-yaml)
-  - [Tables](#tables)
-  - [Inline Table of Contents](#inline-table-of-contents)
-- [5. Diagrams \& Visuals](#5-diagrams--visuals)
-  - [Supported diagram types](#supported-diagram-types)
-  - [Mermaid examples (copy/paste)](#mermaid-examples-copypaste)
-    - [Flowchart / Graph](#flowchart--graph)
-    - [Sequence diagram](#sequence-diagram)
-    - [Class diagram](#class-diagram)
-    - [State diagram](#state-diagram)
-    - [ER diagram](#er-diagram)
-    - [Gantt chart](#gantt-chart)
-    - [Pie chart](#pie-chart)
-    - [User journey](#user-journey)
-    - [Git graph](#git-graph)
-    - [Mindmap](#mindmap)
-    - [Timeline](#timeline)
-    - [Quadrant chart](#quadrant-chart)
-    - [XY chart](#xy-chart)
-    - [Sankey diagram](#sankey-diagram)
-    - [Block diagram](#block-diagram)
-  - [Nomnoml examples (copy/paste)](#nomnoml-examples-copypaste)
-    - [Classifier overview](#classifier-overview)
-    - [Class diagram](#class-diagram-1)
-    - [Relationship types](#relationship-types)
-    - [Component diagram](#component-diagram)
-    - [With style directives](#with-style-directives)
-  - [PlantUML examples (copy/paste)](#plantuml-examples-copypaste)
-    - [Sequence diagram](#sequence-diagram-1)
-    - [Use case diagram](#use-case-diagram)
-    - [Class diagram](#class-diagram-2)
-    - [Activity diagram](#activity-diagram)
-    - [Component diagram](#component-diagram-1)
-    - [State diagram](#state-diagram-1)
-    - [Deployment diagram](#deployment-diagram)
-    - [Object diagram](#object-diagram)
-    - [Mind map](#mind-map)
-    - [Gantt chart](#gantt-chart-1)
-    - [JSON / YAML visualization](#json--yaml-visualization)
-  - [Excalidraw example (copy/paste)](#excalidraw-example-copypaste)
-  - [Flowchart.js examples (copy/paste)](#flowchartjs-examples-copypaste)
-    - [All node types example](#all-node-types-example)
-    - [Minimal example (`flow` syntax)](#minimal-example-flow-syntax)
-  - [Sequence (js-sequence-diagrams) example (copy/paste)](#sequence-js-sequence-diagrams-example-copypaste)
-  - [Vega-Lite examples (copy/paste)](#vega-lite-examples-copypaste)
-    - [Bar chart](#bar-chart)
-    - [Line chart](#line-chart)
-    - [Area chart](#area-chart)
-    - [Scatter plot (circle)](#scatter-plot-circle)
-    - [Pie / donut chart (arc)](#pie--donut-chart-arc)
-    - [Tick plot](#tick-plot)
-    - [Heatmap (rect)](#heatmap-rect)
-    - [Horizontal bar chart](#horizontal-bar-chart)
-    - [Stacked bar chart](#stacked-bar-chart)
-  - [Markmap examples (copy/paste)](#markmap-examples-copypaste)
-    - [Headings structure](#headings-structure)
-    - [Lists and links](#lists-and-links)
-- [6. Knowledge Features](#6-knowledge-features)
-  - [Wiki Links](#wiki-links)
-  - [Backlinks](#backlinks)
-  - [Tags](#tags)
-  - [Outline \& TOC](#outline--toc)
-- [7. Search \& Replace](#7-search--replace)
-- [8. Export \& Presentation](#8-export--presentation)
-  - [Export](#export)
-  - [Presentation mode](#presentation-mode)
-- [9. Templates](#9-templates)
-- [10. Themes \& Appearance](#10-themes--appearance)
-  - [Built-in themes](#built-in-themes)
-  - [Import a custom CSS theme](#import-a-custom-css-theme)
-  - [Create a custom theme](#create-a-custom-theme)
-  - [CSS variable reference](#css-variable-reference)
-  - [Example theme (Tokyo Night style)](#example-theme-tokyo-night-style)
-- [11. Shortcuts](#11-shortcuts)
-- [12. Pro License (Optional)](#12-pro-license-optional)
-  - [Activate](#activate)
+- [目錄](#目錄)
+- [1. 快速開始](#1-快速開始)
+  - [安裝](#安裝)
+  - [建立或開啟工作區](#建立或開啟工作區)
+- [2. 工作區與介面概覽](#2-工作區與介面概覽)
+- [3. 編輯模式](#3-編輯模式)
+- [4. 日常 Markdown 用法](#4-日常-markdown-用法)
+  - [常見語法（範例）](#常見語法範例)
+  - [Callout 提示區塊](#callout-提示區塊)
+  - [Front Matter（YAML）](#front-matteryaml)
+  - [表格](#表格)
+  - [行內目錄](#行內目錄)
+- [5. 圖表與視覺化](#5-圖表與視覺化)
+  - [支援的圖表類型](#支援的圖表類型)
+  - [Mermaid 範例（可直接複製貼上）](#mermaid-範例可直接複製貼上)
+    - [流程圖 / 圖形](#流程圖--圖形)
+    - [序列圖](#序列圖)
+    - [類別圖](#類別圖)
+    - [狀態圖](#狀態圖)
+    - [ER 圖](#er-圖)
+    - [甘特圖](#甘特圖)
+    - [圓餅圖](#圓餅圖)
+    - [使用者旅程圖](#使用者旅程圖)
+    - [Git 圖](#git-圖)
+    - [心智圖](#心智圖)
+    - [時間線](#時間線)
+    - [象限圖](#象限圖)
+    - [XY 圖](#xy-圖)
+    - [Sankey 圖](#sankey-圖)
+    - [區塊圖](#區塊圖)
+  - [Nomnoml 範例（可直接複製貼上）](#nomnoml-範例可直接複製貼上)
+    - [分類器總覽](#分類器總覽)
+    - [類別圖](#類別圖-1)
+    - [關係類型](#關係類型)
+    - [元件圖](#元件圖)
+    - [搭配樣式指令](#搭配樣式指令)
+  - [PlantUML 範例（可直接複製貼上）](#plantuml-範例可直接複製貼上)
+    - [序列圖](#序列圖-1)
+    - [使用案例圖](#使用案例圖)
+    - [類別圖](#類別圖-2)
+    - [活動圖](#活動圖)
+    - [元件圖](#元件圖-1)
+    - [狀態圖](#狀態圖-1)
+    - [部署圖](#部署圖)
+    - [物件圖](#物件圖)
+    - [心智圖](#心智圖-1)
+    - [甘特圖](#甘特圖-1)
+    - [JSON / YAML 視覺化](#json--yaml-視覺化)
+  - [Excalidraw 範例（可直接複製貼上）](#excalidraw-範例可直接複製貼上)
+  - [Flowchart.js 範例（可直接複製貼上）](#flowchartjs-範例可直接複製貼上)
+    - [所有節點類型範例](#所有節點類型範例)
+    - [最小範例（`flow` 語法）](#最小範例flow-語法)
+  - [Sequence（js-sequence-diagrams）範例（可直接複製貼上）](#sequencejs-sequence-diagrams範例可直接複製貼上)
+  - [Vega-Lite 範例（可直接複製貼上）](#vega-lite-範例可直接複製貼上)
+    - [長條圖](#長條圖)
+    - [折線圖](#折線圖)
+    - [區域圖](#區域圖)
+    - [散佈圖（circle）](#散佈圖circle)
+    - [圓餅圖 / 甜甜圈圖（arc）](#圓餅圖--甜甜圈圖arc)
+    - [Tick 圖](#tick-圖)
+    - [熱力圖（rect）](#熱力圖rect)
+    - [水平長條圖](#水平長條圖)
+    - [堆疊長條圖](#堆疊長條圖)
+  - [Markmap 範例（可直接複製貼上）](#markmap-範例可直接複製貼上)
+    - [標題結構](#標題結構)
+    - [清單與連結](#清單與連結)
+- [6. 知識管理功能](#6-知識管理功能)
+  - [Wiki 連結](#wiki-連結)
+  - [反向連結](#反向連結)
+  - [標籤](#標籤)
+  - [大綱與 TOC](#大綱與-toc)
+- [7. 搜尋與取代](#7-搜尋與取代)
+- [8. 匯出與簡報](#8-匯出與簡報)
+  - [匯出](#匯出)
+  - [簡報模式](#簡報模式)
+- [9. 範本](#9-範本)
+- [10. 主題與外觀](#10-主題與外觀)
+  - [內建主題](#內建主題)
+  - [匯入自訂 CSS 主題](#匯入自訂-css-主題)
+  - [建立自訂主題](#建立自訂主題)
+  - [CSS 變數參考](#css-變數參考)
+  - [範例主題（Tokyo Night 風格）](#範例主題tokyo-night-風格)
+- [11. 快捷鍵](#11-快捷鍵)
+- [12. Pro 授權（可選）](#12-pro-授權可選)
+  - [啟用](#啟用)
 
 ---
 
-## 1. Getting Started
+## 1. 快速開始
 
-### Install
+### 安裝
 
-- **Download**: get the latest installer from the project's [GitHub Releases](https://github.com/Cacao-s/marknote-official/releases/latest).
-- **Homebrew (macOS)**:
+- **下載**：可從專案的 [GitHub Releases](https://github.com/Cacao-s/marknote-official/releases/latest) 取得最新安裝程式。
+- **Homebrew（macOS）**：
 
 ```bash
 brew install cacao-s/tap/marknote
 ```
 
-### Create or Open a Workspace
+### 建立或開啟工作區
 
-MarkNote works in a **workspace folder**. After launching:
+MarkNote 以**工作區資料夾**為單位運作。啟動後：
 
-1. Choose a workspace folder (or create one).
-2. Use the file tree to create/open Markdown files (`.md`).
-
----
-
-## 2. Workspace & UI Overview
-
-The main UI is built around:
-
-- **File tree**: manage notes and folders in your workspace (drag-and-drop supported).
-- **Tabs**: edit multiple files at once; same-name files are disambiguated by path.
-- **Editor**: WYSIWYG Markdown editing (no split preview required).
-- **Sidebar panels**: Files / Outline / Search / Source Control / Tags / Backlinks / Graph (availability may depend on your edition/license).
-- **Status bar**: quick status and actions.
+1. 選擇一個工作區資料夾（或建立新的）。
+2. 使用檔案樹建立／開啟 Markdown 檔案（`.md`）。
 
 ---
 
-## 3. Editing Modes
+## 2. 工作區與介面概覽
 
-Switch modes depending on what you need:
+主要介面由以下部分組成：
 
-- **WYSIWYG (default)**: visual editing with Markdown syntax mostly hidden.
-- **Source Mode**: plain Markdown text with syntax highlighting.
-- **Focus Mode**: dims non-focused paragraphs (opacity configurable).
-- **Typewriter Mode**: keeps the cursor vertically centered (position configurable).
-
-**Quick actions**
-
-- **Command Palette**: `Cmd/Ctrl + Shift + P` (search actions, file ops, formatting, etc.)
-- **Quick Open**: `Cmd/Ctrl + P`
-- **Quick Insert**: type `/` at the start of a line (insert items with shortcut hints)
-- **Formatting toolbar**: appears when selecting text (bold/italic/link/clear formatting, etc.)
+- **檔案樹**：管理工作區內的筆記與資料夾（支援拖放）。
+- **分頁**：可同時編輯多個檔案；同名檔案會以路徑區分。
+- **編輯器**：WYSIWYG Markdown 編輯，不需要分割預覽。
+- **側邊欄面板**：檔案 / 大綱 / 搜尋 / 原始碼控制 / 標籤 / 反向連結 / 圖譜（可用性可能依版本或授權而定）。
+- **狀態列**：提供快速狀態資訊與操作。
 
 ---
 
-## 4. Everyday Markdown
+## 3. 編輯模式
 
-### Common Syntax (Examples)
+你可以依需求切換不同模式：
+
+- **WYSIWYG（預設）**：視覺化編輯，Markdown 語法大多被隱藏。
+- **原始碼模式**：以純 Markdown 文字搭配語法高亮顯示。
+- **專注模式**：淡化未聚焦段落（透明度可設定）。
+- **打字機模式**：讓游標維持在垂直置中位置（位置可設定）。
+
+**快速操作**
+
+- **命令面板**：`Cmd/Ctrl + Shift + P`（搜尋操作、檔案操作、格式化等）
+- **快速開啟**：`Cmd/Ctrl + P`
+- **快速插入**：在行首輸入 `/`（插入項目並顯示快捷提示）
+- **格式工具列**：選取文字時出現（粗體 / 斜體 / 連結 / 清除格式等）
+
+---
+
+## 4. 日常 Markdown 用法
+
+### 常見語法（範例）
 
 ````markdown
-# Heading 1
+# 標題 1
 
-## Heading 2
+## 標題 2
 
-**Bold** / _Italic_ / ~~Strikethrough~~ / ==Highlight==
+**粗體** / _斜體_ / ~~刪除線~~ / ==高亮==
 
-- Unordered list
+- 無序清單
 
-1. Ordered list
+1. 有序清單
 
-- [ ] Task
-- [x] Done
+- [ ] 待辦事項
+- [x] 已完成
 
-`Inline code`
+`行內程式碼`
 
 ```js
 console.log("Code block");
 ```
 
-[Link text](https://example.com)
-![Image](https://example.com/image.png)
+[連結文字](https://example.com)
+![圖片](https://example.com/image.png)
 ````
 
-### Callouts
+### Callout 提示區塊
 
-Use `> [!type]` to create styled callout blocks:
+使用 `> [!type]` 建立帶樣式的提示區塊：
 
 ```markdown
 > [!NOTE]
-> This is a note.
+> 這是一則提示。
 
 > [!WARNING]
-> This is a warning.
+> 這是一則警告。
 ```
 
-### Front Matter (YAML)
+### Front Matter（YAML）
 
-Markdown files may include front matter at the top:
+Markdown 檔案可在開頭加入 front matter：
 
 ```markdown
 ---
@@ -198,9 +198,9 @@ tags: [work, reading]
 ---
 ```
 
-### Tables
+### 表格
 
-Pipe tables render as an interactive table component in WYSIWYG mode.
+Pipe 表格在 WYSIWYG 模式下會以互動式表格元件呈現。
 
 ```markdown
 | Name | Value |
@@ -209,31 +209,31 @@ Pipe tables render as an interactive table component in WYSIWYG mode.
 |    B | 2     |
 ```
 
-### Inline Table of Contents
+### 行內目錄
 
-Insert `[TOC]` in your note to generate a clickable table of contents from headings.
+在筆記中插入 `[TOC]`，即可根據標題自動產生可點擊的目錄。
 
 ---
 
-## 5. Diagrams & Visuals
+## 5. 圖表與視覺化
 
-You can paste these diagrams directly into Markdown code fences.
+你可以直接把以下圖表貼進 Markdown 程式碼區塊。
 
-### Supported diagram types
+### 支援的圖表類型
 
-- [Mermaid](#mermaid-examples-copypaste)
-- [PlantUML](#plantuml-examples-copypaste)
-- [Nomnoml](#nomnoml-examples-copypaste)
-- [Flowchart.js](#flowchartjs-examples-copypaste) / [Sequence diagrams](#sequence-js-sequence-diagrams-example-copypaste)
-- [Excalidraw](#excalidraw-example-copypaste)
-- [Vega-Lite](#vega-lite-examples-copypaste)
-- [Markmap mind maps](#markmap-examples-copypaste)
+- [Mermaid](#mermaid-範例可直接複製貼上)
+- [PlantUML](#plantuml-範例可直接複製貼上)
+- [Nomnoml](#nomnoml-範例可直接複製貼上)
+- [Flowchart.js](#flowchartjs-範例可直接複製貼上) / [Sequence diagrams](#sequencejs-sequence-diagrams範例可直接複製貼上)
+- [Excalidraw](#excalidraw-範例可直接複製貼上)
+- [Vega-Lite](#vega-lite-範例可直接複製貼上)
+- [Markmap mind maps](#markmap-範例可直接複製貼上)
 
-### Mermaid examples (copy/paste)
+### Mermaid 範例（可直接複製貼上）
 
-Put Mermaid content inside a fenced code block labeled `mermaid`.
+請將 Mermaid 內容放在標記為 `mermaid` 的 fenced code block 中。
 
-#### Flowchart / Graph
+#### 流程圖 / 圖形
 
 ````markdown
 ```mermaid
@@ -248,7 +248,7 @@ graph TD
 ```
 ````
 
-#### Sequence diagram
+#### 序列圖
 
 ````markdown
 ```mermaid
@@ -268,7 +268,7 @@ sequenceDiagram
 ```
 ````
 
-#### Class diagram
+#### 類別圖
 
 ````markdown
 ```mermaid
@@ -295,7 +295,7 @@ classDiagram
 ```
 ````
 
-#### State diagram
+#### 狀態圖
 
 ````markdown
 ```mermaid
@@ -311,7 +311,7 @@ stateDiagram-v2
 ```
 ````
 
-#### ER diagram
+#### ER 圖
 
 ````markdown
 ```mermaid
@@ -343,7 +343,7 @@ erDiagram
 ```
 ````
 
-#### Gantt chart
+#### 甘特圖
 
 ````markdown
 ```mermaid
@@ -364,7 +364,7 @@ gantt
 ```
 ````
 
-#### Pie chart
+#### 圓餅圖
 
 ````markdown
 ```mermaid
@@ -377,7 +377,7 @@ pie title Monthly budget
 ```
 ````
 
-#### User journey
+#### 使用者旅程圖
 
 ````markdown
 ```mermaid
@@ -396,7 +396,7 @@ journey
 ```
 ````
 
-#### Git graph
+#### Git 圖
 
 ````markdown
 ```mermaid
@@ -420,7 +420,7 @@ gitGraph
 ```
 ````
 
-#### Mindmap
+#### 心智圖
 
 ````markdown
 ```mermaid
@@ -444,7 +444,7 @@ mindmap
 ```
 ````
 
-#### Timeline
+#### 時間線
 
 ````markdown
 ```mermaid
@@ -459,7 +459,7 @@ timeline
 ```
 ````
 
-#### Quadrant chart
+#### 象限圖
 
 ````markdown
 ```mermaid
@@ -480,7 +480,7 @@ quadrantChart
 ```
 ````
 
-#### XY chart
+#### XY 圖
 
 ````markdown
 ```mermaid
@@ -493,7 +493,7 @@ xychart-beta
 ```
 ````
 
-#### Sankey diagram
+#### Sankey 圖
 
 ````markdown
 ```mermaid
@@ -510,7 +510,7 @@ Fun,Travel,9
 ```
 ````
 
-#### Block diagram
+#### 區塊圖
 
 ````markdown
 ```mermaid
@@ -530,11 +530,11 @@ block-beta
 ```
 ````
 
-### Nomnoml examples (copy/paste)
+### Nomnoml 範例（可直接複製貼上）
 
-Put Nomnoml content inside a fenced code block labeled `nomnoml`.
+請將 Nomnoml 內容放在標記為 `nomnoml` 的 fenced code block 中。
 
-#### Classifier overview
+#### 分類器總覽
 
 ````markdown
 ```nomnoml
@@ -557,7 +557,7 @@ Put Nomnoml content inside a fenced code block labeled `nomnoml`.
 ```
 ````
 
-#### Class diagram
+#### 類別圖
 
 ````markdown
 ```nomnoml
@@ -582,7 +582,7 @@ Put Nomnoml content inside a fenced code block labeled `nomnoml`.
 ```
 ````
 
-#### Relationship types
+#### 關係類型
 
 ````markdown
 ```nomnoml
@@ -595,7 +595,7 @@ Put Nomnoml content inside a fenced code block labeled `nomnoml`.
 ```
 ````
 
-#### Component diagram
+#### 元件圖
 
 ````markdown
 ```nomnoml
@@ -615,7 +615,7 @@ Put Nomnoml content inside a fenced code block labeled `nomnoml`.
 ```
 ````
 
-#### With style directives
+#### 搭配樣式指令
 
 ````markdown
 ```nomnoml
@@ -635,12 +635,12 @@ Put Nomnoml content inside a fenced code block labeled `nomnoml`.
 ```
 ````
 
-### PlantUML examples (copy/paste)
+### PlantUML 範例（可直接複製貼上）
 
-PlantUML can be rendered via a remote PlantUML server depending on your settings.
-Put PlantUML content inside a fenced code block labeled `plantuml`.
+依你的設定，PlantUML 可能會透過遠端 PlantUML server 進行渲染。
+請將 PlantUML 內容放在標記為 `plantuml` 的 fenced code block 中。
 
-#### Sequence diagram
+#### 序列圖
 
 ````markdown
 ```plantuml
@@ -664,7 +664,7 @@ P --> C : Train arrives
 ```
 ````
 
-#### Use case diagram
+#### 使用案例圖
 
 ````markdown
 ```plantuml
@@ -694,7 +694,7 @@ UC5 --> S : Driver updates
 ```
 ````
 
-#### Class diagram
+#### 類別圖
 
 ````markdown
 ```plantuml
@@ -728,7 +728,7 @@ Chef --> Courier : hands off to
 ```
 ````
 
-#### Activity diagram
+#### 活動圖
 
 ````markdown
 ```plantuml
@@ -755,7 +755,7 @@ stop
 ```
 ````
 
-#### Component diagram
+#### 元件圖
 
 ````markdown
 ```plantuml
@@ -782,7 +782,7 @@ Cake --> Candles : light
 ```
 ````
 
-#### State diagram
+#### 狀態圖
 
 ````markdown
 ```plantuml
@@ -799,7 +799,7 @@ Full --> [*]
 ```
 ````
 
-#### Deployment diagram
+#### 部署圖
 
 ````markdown
 ```plantuml
@@ -822,7 +822,7 @@ router --> stream : internet access
 ```
 ````
 
-#### Object diagram
+#### 物件圖
 
 ````markdown
 ```plantuml
@@ -849,7 +849,7 @@ cashier --> cart : checks out
 ```
 ````
 
-#### Mind map
+#### 心智圖
 
 ````markdown
 ```plantuml
@@ -873,7 +873,7 @@ cashier --> cart : checks out
 ```
 ````
 
-#### Gantt chart
+#### 甘特圖
 
 ````markdown
 ```plantuml
@@ -888,7 +888,7 @@ Project starts 2024-01-01
 ```
 ````
 
-#### JSON / YAML visualization
+#### JSON / YAML 視覺化
 
 ````markdown
 ```plantuml
@@ -906,10 +906,10 @@ Project starts 2024-01-01
 ```
 ````
 
-### Excalidraw example (copy/paste)
+### Excalidraw 範例（可直接複製貼上）
 
-Excalidraw is an interactive, hand-drawn style diagram. Double-click the block to open the full-screen editor.
-Put Excalidraw JSON inside a fenced code block labeled `excalidraw`.
+Excalidraw 是一種互動式、手繪風格的圖表。雙擊區塊即可開啟全螢幕編輯器。
+請將 Excalidraw JSON 放在標記為 `excalidraw` 的 fenced code block 中。
 
 ````markdown
 ```excalidraw
@@ -1114,13 +1114,13 @@ Put Excalidraw JSON inside a fenced code block labeled `excalidraw`.
 ```
 ````
 
-Tip: in most cases, you should draw using the full-screen editor instead of hand-editing JSON.
+提示：大多數情況下，建議使用全螢幕編輯器繪製，而不是直接手動修改 JSON。
 
-### Flowchart.js examples (copy/paste)
+### Flowchart.js 範例（可直接複製貼上）
 
-Use either `flowchart` or `flow` as the code fence label.
+程式碼區塊標籤可使用 `flowchart` 或 `flow`。
 
-#### All node types example
+#### 所有節點類型範例
 
 ````markdown
 ```flowchart
@@ -1144,7 +1144,7 @@ io_out->e
 ```
 ````
 
-#### Minimal example (`flow` syntax)
+#### 最小範例（`flow` 語法）
 
 ````markdown
 ```flow
@@ -1159,9 +1159,9 @@ cond(no)->op
 ```
 ````
 
-### Sequence (js-sequence-diagrams) example (copy/paste)
+### Sequence（js-sequence-diagrams）範例（可直接複製貼上）
 
-Put sequence content inside a fenced code block labeled `sequence`.
+請將 sequence 內容放在標記為 `sequence` 的 fenced code block 中。
 
 ````markdown
 ```sequence
@@ -1181,11 +1181,11 @@ P-->C: Receipt
 ```
 ````
 
-### Vega-Lite examples (copy/paste)
+### Vega-Lite 範例（可直接複製貼上）
 
-Vega-Lite is a declarative charting spec written in JSON. Use either `vega-lite` or `vega` as the code fence label.
+Vega-Lite 是以 JSON 撰寫的宣告式圖表規格。程式碼區塊標籤可使用 `vega-lite` 或 `vega`。
 
-#### Bar chart
+#### 長條圖
 
 ````markdown
 ```vega-lite
@@ -1212,7 +1212,7 @@ Vega-Lite is a declarative charting spec written in JSON. Use either `vega-lite`
 ```
 ````
 
-#### Line chart
+#### 折線圖
 
 ````markdown
 ```vega-lite
@@ -1239,7 +1239,7 @@ Vega-Lite is a declarative charting spec written in JSON. Use either `vega-lite`
 ```
 ````
 
-#### Area chart
+#### 區域圖
 
 ````markdown
 ```vega-lite
@@ -1266,7 +1266,7 @@ Vega-Lite is a declarative charting spec written in JSON. Use either `vega-lite`
 ```
 ````
 
-#### Scatter plot (circle)
+#### 散佈圖（circle）
 
 ````markdown
 ```vega-lite
@@ -1295,7 +1295,7 @@ Vega-Lite is a declarative charting spec written in JSON. Use either `vega-lite`
 ```
 ````
 
-#### Pie / donut chart (arc)
+#### 圓餅圖 / 甜甜圈圖（arc）
 
 ````markdown
 ```vega-lite
@@ -1319,7 +1319,7 @@ Vega-Lite is a declarative charting spec written in JSON. Use either `vega-lite`
 ```
 ````
 
-#### Tick plot
+#### Tick 圖
 
 ````markdown
 ```vega-lite
@@ -1347,7 +1347,7 @@ Vega-Lite is a declarative charting spec written in JSON. Use either `vega-lite`
 ```
 ````
 
-#### Heatmap (rect)
+#### 熱力圖（rect）
 
 ````markdown
 ```vega-lite
@@ -1380,7 +1380,7 @@ Vega-Lite is a declarative charting spec written in JSON. Use either `vega-lite`
 ```
 ````
 
-#### Horizontal bar chart
+#### 水平長條圖
 
 ````markdown
 ```vega-lite
@@ -1407,7 +1407,7 @@ Vega-Lite is a declarative charting spec written in JSON. Use either `vega-lite`
 ```
 ````
 
-#### Stacked bar chart
+#### 堆疊長條圖
 
 ````markdown
 ```vega-lite
@@ -1438,11 +1438,11 @@ Vega-Lite is a declarative charting spec written in JSON. Use either `vega-lite`
 ```
 ````
 
-### Markmap examples (copy/paste)
+### Markmap 範例（可直接複製貼上）
 
-Markmap renders a mind map from Markdown headings and lists. Put content inside a fenced code block labeled `markmap`.
+Markmap 會根據 Markdown 標題與清單渲染心智圖。請將內容放在標記為 `markmap` 的 fenced code block 中。
 
-#### Headings structure
+#### 標題結構
 
 ````markdown
 ```markmap
@@ -1465,7 +1465,7 @@ Markmap renders a mind map from Markdown headings and lists. Put content inside 
 ```
 ````
 
-#### Lists and links
+#### 清單與連結
 
 ````markdown
 ```markmap
@@ -1492,30 +1492,30 @@ Markmap renders a mind map from Markdown headings and lists. Put content inside 
 
 ---
 
-## 6. Knowledge Features
+## 6. 知識管理功能
 
-### Wiki Links
+### Wiki 連結
 
-Use `[[filename]]` (or `[[filename|label]]`) to connect notes:
+使用 `[[filename]]`（或 `[[filename|label]]`）串接筆記：
 
 ```markdown
 See also: [[Architecture]]
 See also: [[Architecture|Design Notes]]
 ```
 
-### Backlinks
+### 反向連結
 
-The Backlinks panel lists all notes that link to the current note.
+反向連結面板會列出所有連到目前筆記的其他筆記。
 
-### Tags
+### 標籤
 
-Use inline tags:
+可使用行內標籤：
 
 ```markdown
 #project #meeting
 ```
 
-Or manage tags via front matter:
+也可以透過 front matter 管理標籤：
 
 ```markdown
 ---
@@ -1523,39 +1523,39 @@ tags: [project, meeting]
 ---
 ```
 
-### Outline & TOC
+### 大綱與 TOC
 
-- **Outline panel**: auto-generated structure from headings.
-- **Inline TOC**: insert `[TOC]` inside the document.
-
----
-
-## 7. Search & Replace
-
-- **Quick Open**: `Cmd/Ctrl + P`
-- **Find**: `Cmd/Ctrl + F`
-- **Find & Replace**: `Cmd/Ctrl + Shift + H`
-- **Global Search**: `Cmd/Ctrl + Shift + F` (supports regex, case-sensitive, whole word)
-- **Search highlighting**: highlights all matches in real time
+- **大綱面板**：根據標題自動產生結構。
+- **行內 TOC**：在文件中插入 `[TOC]`。
 
 ---
 
-## 8. Export & Presentation
+## 7. 搜尋與取代
 
-### Export
+- **快速開啟**：`Cmd/Ctrl + P`
+- **尋找**：`Cmd/Ctrl + F`
+- **尋找與取代**：`Cmd/Ctrl + Shift + H`
+- **全域搜尋**：`Cmd/Ctrl + Shift + F`（支援 regex、區分大小寫、完整單字）
+- **搜尋高亮**：即時標示所有匹配結果
 
-Export a note to:
+---
 
-- **HTML** (standalone file; export theme selectable)
-- **PDF** (page size and margins configurable; `---` can be used as a page break)
+## 8. 匯出與簡報
+
+### 匯出
+
+可將筆記匯出為：
+
+- **HTML**（獨立檔案；可選擇匯出主題）
+- **PDF**（頁面尺寸與邊界可設定；可用 `---` 作為分頁）
 - **DOCX**
-- **Images** (PNG / JPG / WebP / SVG; useful for slides)
+- **圖片**（PNG / JPG / WebP / SVG；適合用於投影片）
 
-Note: some formats/options may require a Pro license depending on your edition.
+注意：部分格式或選項可能依版本而需要 Pro 授權。
 
-### Presentation mode
+### 簡報模式
 
-Split Markdown into slides with `---`:
+使用 `---` 將 Markdown 切成多張投影片：
 
 ```markdown
 # Slide 1
@@ -1565,20 +1565,20 @@ Split Markdown into slides with `---`:
 # Slide 2
 ```
 
-Navigate with arrow keys or spacebar.
+使用方向鍵或空白鍵切換。
 
 ---
 
-## 9. Templates
+## 9. 範本
 
-Built-in templates are available, and you can add your own templates.
+內建提供範本，你也可以加入自己的範本。
 
-Template locations:
+範本位置：
 
-- **Global templates**: `~/.MarkNote/templates/`
-- **Workspace templates**: `<workspace>/_templates/`
+- **全域範本**：`~/.MarkNote/templates/`
+- **工作區範本**：`<workspace>/_templates/`
 
-Example template:
+範本範例：
 
 ```markdown
 ---
@@ -1601,76 +1601,76 @@ tags: [reading]
 
 ---
 
-## 10. Themes & Appearance
+## 10. 主題與外觀
 
-### Built-in themes
+### 內建主題
 
-MarkNote supports Light / Dark / System themes.
+MarkNote 支援淺色 / 深色 / 跟隨系統主題。
 
-### Import a custom CSS theme
+### 匯入自訂 CSS 主題
 
-1. Settings -> Appearance -> Import a `.css` theme file
-2. Or place the file in the theme folder and reload
+1. 到 Settings -> Appearance -> Import，選擇 `.css` 主題檔
+2. 或將檔案放進主題資料夾後重新載入
 
-Theme folders:
+主題資料夾位置：
 
-- macOS / Linux: `~/.MarkNote/themes/`
-- Windows: `C:\Users\<username>\.MarkNote\themes\`
+- macOS / Linux：`~/.MarkNote/themes/`
+- Windows：`C:\Users\<username>\.MarkNote\themes\`
 
-### Create a custom theme
+### 建立自訂主題
 
-Custom themes are plain CSS files.
+自訂主題就是一般 CSS 檔案。
 
-- The theme file must use the selector `:root[data-theme="custom"]` and override CSS variables.
-- The filename (without `.css`) becomes the theme name shown in the UI (for example `tokyo-night.css` appears as "Tokyo Night").
+- 主題檔必須使用選擇器 `:root[data-theme="custom"]` 並覆寫 CSS 變數。
+- 檔名（不含 `.css`）會成為 UI 顯示的主題名稱（例如 `tokyo-night.css` 會顯示為 "Tokyo Night"）。
 
-### CSS variable reference
+### CSS 變數參考
 
-**Core colors**
+**核心色彩**
 
-| Variable           | Meaning                                     |
-| ------------------ | ------------------------------------------- |
-| `--bg-primary`     | Primary background (editor, panels)         |
-| `--bg-secondary`   | Secondary background (sidebar, inputs)      |
-| `--bg-tertiary`    | Tertiary background (hover states, tags)    |
-| `--text-primary`   | Primary text color                          |
-| `--text-secondary` | Secondary / muted text color                |
-| `--accent`         | Accent color (links, selection, buttons)    |
-| `--border`         | Border color                                |
-| `--hover`          | Hover highlight (semi-transparent)          |
-| `--selection`      | Text selection highlight (semi-transparent) |
+| Variable           | Meaning                        |
+| ------------------ | ------------------------------ |
+| `--bg-primary`     | 主要背景（編輯器、面板）       |
+| `--bg-secondary`   | 次要背景（側邊欄、輸入框）     |
+| `--bg-tertiary`    | 第三級背景（hover 狀態、標籤） |
+| `--text-primary`   | 主要文字顏色                   |
+| `--text-secondary` | 次要 / 淡化文字顏色            |
+| `--accent`         | 強調色（連結、選取、按鈕）     |
+| `--border`         | 邊框顏色                       |
+| `--hover`          | hover 高亮（半透明）           |
+| `--selection`      | 文字選取高亮（半透明）         |
 
-**Semantic colors**
+**語意色彩**
 
-| Variable    | Meaning                       |
-| ----------- | ----------------------------- |
-| `--error`   | Errors, destructive actions   |
-| `--warning` | Warnings                      |
-| `--success` | Success states, confirmations |
+| Variable    | Meaning          |
+| ----------- | ---------------- |
+| `--error`   | 錯誤、破壞性操作 |
+| `--warning` | 警告             |
+| `--success` | 成功狀態、確認   |
 
-**Shadows**
+**陰影**
 
-| Variable            | Meaning         |
-| ------------------- | --------------- |
-| `--shadow-dropdown` | Dropdown shadow |
-| `--shadow-modal`    | Modal shadow    |
+| Variable            | Meaning      |
+| ------------------- | ------------ |
+| `--shadow-dropdown` | 下拉選單陰影 |
+| `--shadow-modal`    | 對話框陰影   |
 
-**Syntax highlighting**
+**語法高亮**
 
-| Variable        | Meaning                                  |
-| --------------- | ---------------------------------------- |
-| `--hl-keyword`  | Keywords (`if`, `return`, `const`, etc.) |
-| `--hl-atom`     | Atoms / constants (`true`, `null`, etc.) |
-| `--hl-string`   | String literals                          |
-| `--hl-comment`  | Comments                                 |
-| `--hl-meta`     | Meta / preprocessor directives           |
-| `--hl-tag`      | HTML/XML tags                            |
-| `--hl-variable` | Variables                                |
-| `--hl-regexp`   | Regular expressions                      |
-| `--hl-link`     | Links / URLs                             |
-| `--hl-invalid`  | Invalid / error tokens                   |
+| Variable        | Meaning                              |
+| --------------- | ------------------------------------ |
+| `--hl-keyword`  | 關鍵字（`if`、`return`、`const` 等） |
+| `--hl-atom`     | 原子值 / 常數（`true`、`null` 等）   |
+| `--hl-string`   | 字串常值                             |
+| `--hl-comment`  | 註解                                 |
+| `--hl-meta`     | Meta / 預處理器指令                  |
+| `--hl-tag`      | HTML/XML 標籤                        |
+| `--hl-variable` | 變數                                 |
+| `--hl-regexp`   | 正規表示式                           |
+| `--hl-link`     | 連結 / URL                           |
+| `--hl-invalid`  | 無效 / 錯誤 token                    |
 
-### Example theme (Tokyo Night style)
+### 範例主題（Tokyo Night 風格）
 
 ```css
 /* Tokyo Night - MarkNote custom theme */
@@ -1711,9 +1711,9 @@ Custom themes are plain CSS files.
 
 ---
 
-## 11. Shortcuts
+## 11. 快捷鍵
 
-`Cmd` is for macOS; `Ctrl` is for Windows/Linux. Shortcuts can be customized in Settings.
+`Cmd` 用於 macOS；`Ctrl` 用於 Windows/Linux。快捷鍵可在 Settings 中自訂。
 
 | Action             | Shortcut               |
 | ------------------ | ---------------------- |
@@ -1729,19 +1729,19 @@ Custom themes are plain CSS files.
 | Toggle Source Mode | `Cmd/Ctrl + /`         |
 | Focus / Typewriter | `F8` / `F9`            |
 
-For a more complete shortcut list, see `README.md` (section "Shortcuts").
+若要查看更完整的快捷鍵列表，請參考 `README.md` 的「Shortcuts」章節。
 
 ---
 
-## 12. Pro License (Optional)
+## 12. Pro 授權（可選）
 
-Some advanced features may be unlocked with a Pro license (for example: advanced diagrams, math rendering, knowledge panels such as Graph view, presentation mode, custom themes).
+部分進階功能可透過 Pro 授權解鎖（例如：進階圖表、數學公式渲染、Graph view 等知識面板、簡報模式、自訂主題）。
 
-### Activate
+### 啟用
 
-1. Open MarkNote
-2. Go to Settings -> License
-3. Paste your license key
-4. Click "Activate"
+1. 開啟 MarkNote
+2. 前往 Settings -> License
+3. 貼上你的授權金鑰
+4. 點擊「Activate」
 
-Your license key is available on your Polar purchase page.
+你的授權金鑰可在 Polar 購買頁面取得。
